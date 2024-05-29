@@ -85,8 +85,8 @@ int main() {
     scanf("%s", date);
 
     printf("Digite o conteúdo: ");
-    scanf(" %[^\n]", content);
-
+    scanf("%s", content);
+    fflush(stdin);
     printf("Digite o número de tags (até %d): ", MAX_TAGS);
     scanf("%d", &num_tags);
 
